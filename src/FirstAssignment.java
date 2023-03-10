@@ -8,6 +8,7 @@ public static void areOccurrencesEqual(String s) {
 	
 	    int maxSize = 100;
 		int count1[] = new int[maxSize];
+		int count2[] = new int[0];
 		int len = s.length();
         // Initialize count array index
         for ( int i = 0; i < s.length(); i++)
@@ -42,6 +43,7 @@ public static void areOccurrencesEqual(String s) {
 			{
 			
 			System.out.println("count total number of"+" "+letter[i]+" =  "+count1[s.charAt(i)]);
+			
 			}
         } 
         if(count1[0] == count1[1] && count1[1] == count1[2] && count1[2] == count1[0])
