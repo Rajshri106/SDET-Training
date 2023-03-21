@@ -1,20 +1,6 @@
-1-src/Assignment1.java - first assignment class file 
 
-2-src/Assignment2.java - second assigment finding destination city
-
-3-src/AbstractCircle.java
-  src/AbstractDemo.java
-  src/AbstractRun.java  - abstract class files.
-
-4-src/Inheritance.java
-  src/MountainBike.java
-  src/RunInheritance.java - Inheritance class files.
-
-5-src/stackDemo.java - stack file
-
-6-src/Queue.java - Queue file
-
-7-src/Student.java - Implement class and constuctor in student class.
+../src/MediumDificultyAssignment/*.class
+../bin/*.class
 
 
-src/MediumDificultyAssignment/*.class
+
