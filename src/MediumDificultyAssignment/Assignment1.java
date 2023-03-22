@@ -27,17 +27,29 @@ public class Assignment1 {
         double deduction = in.nextDouble();
 
         double taxableIncome = totalIncome - deduction;
-        int taxRate = 0;
-        if (taxableIncome <= 500000) {
-            taxRate = 0;
-        } else if (taxableIncome >= 500000 && taxableIncome <= 700000) {
-            taxRate = 10;
-        } else if (taxableIncome >= 700000 && taxableIncome <= 1000000) {
-            taxRate = 15;
-        } else if (taxableIncome >= 1000000 && taxableIncome <= 1500000) {
-            taxRate = 20;
-        } else {
-            taxRate = 30;
+        int taxRate =0;
+        switch (String.valueOf(taxableIncome)) {
+            case "(taxableIncome <= 500000)":
+                taxRate = 0;
+
+                break;
+            case "(taxableIncome >= 500000 && taxableIncome <= 700000)":
+//                tax = taxableIncome * taxRate / 100;
+//                System.out.println("Income Tax of the employee is: " + tax);
+                taxRate=15;
+                break;
+            case "(taxableIncome >= 700000 && taxableIncome <= 1000000)":
+//                tax = taxableIncome * taxRate / 100;
+//                System.out.println("Income Tax of the employee is: " + tax);
+                taxRate=20;
+                break;
+            case "(taxableIncome >= 1000000 && taxableIncome <= 1500000)":
+//                tax = taxableIncome * taxRate / 100;
+//                System.out.println("Income Tax of the employee is: " + tax);
+                taxRate=20;
+                break;
+            default:
+                taxRate = 30;
         }
 
         double tax = taxableIncome * taxRate / 100;
