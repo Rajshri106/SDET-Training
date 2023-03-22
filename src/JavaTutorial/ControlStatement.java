@@ -2,7 +2,7 @@ package JavaTutorial;
 
 public class ControlStatement {
 
-	public void If_ElseStatement()
+	public void if_ElseStatement()
 	{
 		int n = 8;
 		if(n%2==0)
@@ -15,7 +15,7 @@ public class ControlStatement {
 		}
 	}
 	
-	public void ForLoop()
+	public void forLoop()
 	{
 		int n = 10;
 		int count=0;
@@ -26,7 +26,7 @@ public class ControlStatement {
 		System.out.println("count is :"+count);
 	}
 	
-	public void SwitchClass()
+	public void switchClass()
 	{
 		int n =5;
 		switch(n)
@@ -53,7 +53,7 @@ public class ControlStatement {
 		}
 	}
 	
-	public void DoWhileLoop()
+	public void doWhileLoop()
 	{
 		int n = 8,i=0;
 		
@@ -67,9 +67,9 @@ public class ControlStatement {
 	public static void main(String[] args)
 	{
 		ControlStatement cs = new ControlStatement();
-		cs.If_ElseStatement();
-		cs.ForLoop();
-		cs.SwitchClass();
-		cs.DoWhileLoop();
+		cs.if_ElseStatement();
+		cs.forLoop();
+		cs.switchClass();
+		cs.doWhileLoop();
 	}
 }
