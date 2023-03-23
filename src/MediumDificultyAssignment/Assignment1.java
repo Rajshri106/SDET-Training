@@ -36,7 +36,7 @@ public class Assignment1 {
 
     public static void main(String[] args) {
         Assignment1 a = new Assignment1();
-        double annualIncome = 700000;
+        double annualIncome = 400000;
         double annualDeduction = 50000;
         a.findIncomeTax(annualIncome, annualDeduction);
     }
