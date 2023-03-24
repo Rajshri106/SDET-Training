@@ -3,7 +3,7 @@ public class SortArray {
     public static void main(String[] args) {        
         //define original array     
         int [] intArray = new int [] {2,0,1,0,1};     
-        int temp = 0;    
+        int temp = 0;
  
         //print original array    
        System.out.println("Original array: ");    
