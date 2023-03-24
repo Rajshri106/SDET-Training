@@ -1,29 +1,33 @@
-
+package MediumDificultyAssignment;
 /*Q2 Java program to print the following patterns�
 ���1�
 � 212�
  32123�
 4321234�*/
-
-
-package MediumDificultyAssignment;
-
 public class Assignment2 {
 
-    public static void main(String[] args) {
-        for (int i = 0; i <= 4; i++) {
-            for (int k = 0; k <= 2; k++) {
+    public void printPattern(int n)
+    {
+        for (int i = 1; i <= n; i++) {
+            // Print spaces
+            for (int j = 1; j <= n - i; j++) {
                 System.out.print(" ");
             }
-            for (int j = 1; j <= i + 1; j++) {
-
+            // Print decreasing numbers
+            for (int j = i; j >= 1; j--) {
                 System.out.print(j);
             }
-            for (int k = 0; k <= 2; k++) {
-                System.out.print(" ");
+            // Print increasing numbers
+            for (int j = 2; j <= i; j++) {
+                System.out.print(j);
             }
-            System.out.println("");
+            System.out.println();
         }
+    }
+    public static void main(String[] args) {
+        Assignment2 a = new Assignment2();
+        int n=4;
+        a.printPattern(n);
     }
 }
 
