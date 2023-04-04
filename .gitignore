@@ -6,6 +6,7 @@ bin/*.class
 ../out/production/SDET/JavaTutorial/*.class
 ../out/production/SDET/MediumDificultyAssignment/*.class
 ../src/main/java/org.example/*.class
+../src/main/java/MediumDificultyAssigment/*.class
 
 
 
