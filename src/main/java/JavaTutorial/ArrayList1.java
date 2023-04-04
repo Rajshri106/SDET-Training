@@ -11,7 +11,7 @@ public class ArrayList1 {
         }
         //printing elements
         System.out.println(arrayList);
-        //remove element from index
+        //remove element from index  
         System.out.println(arrayList.remove(3));
         //check element is removed or not
         System.out.println(arrayList.contains(3));
