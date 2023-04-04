@@ -7,6 +7,9 @@ bin/*.class
 ../out/production/SDET/MediumDificultyAssignment/*.class
 ../src/main/java/org.example/*.class
 ../src/main/java/MediumDificultyAssignment/*.class
+../.idea
+../SDET.xml
+../pom.xml
 
 
 
