@@ -18,7 +18,7 @@ public class SortArray {
                  temp = intArray[i];    
                  intArray[i] = intArray[j];    
                  intArray[j] = temp;    
-               }     
+               }              
             }     
         }    
         //print sorted array    
