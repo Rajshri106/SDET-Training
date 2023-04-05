@@ -4,7 +4,7 @@ public class ControlStatement {
 
 	public void if_ElseStatement()
 	{
-		int number = 8;
+		int number = 8;    
 		if(number%2==0)
 		{
 			System.out.println("Even number is : "+number);
