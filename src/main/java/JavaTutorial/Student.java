@@ -35,9 +35,9 @@ public class Student {
 	}
 	public static void main(String[] args)
 	{
-		Student s = new Student("abc",12,"In");
-		System.out.println(s.getName());
-		System.out.println(s.getAge());
-		System.out.println(s.getAddress());
+		Student stud = new Student("abc",12,"In");
+		System.out.println(stud.getName());
+		System.out.println(stud.getAge());
+		System.out.println(stud.getAddress());
 	}
 }
