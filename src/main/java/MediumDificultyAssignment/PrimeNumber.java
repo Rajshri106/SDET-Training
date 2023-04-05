@@ -1,14 +1,5 @@
-
-/*Q3. Given an array of ints, swap the first and last elements in the array. Return the modified array.
-If the last array value is prime no.  
-swapEnds([1, 2, 3, 7]) → [7, 2, 3, 1] 
-swapEnds([1, 2, 3]) → [3, 2, 1] 
-swapEnds([1, 6, 7, 9, 8]) → [1, 6, 7, 9, 8]   */
-
 package MediumDificultyAssignment;
-
 import java.util.Arrays;
-
 public class PrimeNumber {
     public void calculatePrimeNum(int[] intArray) {
         int temp = 0;
@@ -25,12 +16,12 @@ public class PrimeNumber {
     }
 
     public static void main(String[] args) {
-        PrimeNumber a = new PrimeNumber();
+        PrimeNumber primeNumber = new PrimeNumber();
         int[] intArray = new int[]{1, 2, 3, 7};
         int[] intArray1 = new int[]{1, 2, 3};
         int[] intArray2 = new int[]{1, 6, 7, 9, 8};
-        a.calculatePrimeNum(intArray);
-        a.calculatePrimeNum(intArray1);
-        a.calculatePrimeNum(intArray2);
+        primeNumber.calculatePrimeNum(intArray);
+        primeNumber.calculatePrimeNum(intArray1);
+        primeNumber.calculatePrimeNum(intArray2);
     }
 }
