@@ -8,7 +8,7 @@ Above Rs. 7,00,000 (0-5,00,000=nil,5,00,000 – 7,00,000=10%) 
 Rs. 7,00,000-10,00,000 15% on additional amount 
 Rs. 10,00,000-15,00,000 20% on additional amount Above 15,00,000 30% on additional amount
 Result: - income tax is ……………………………. */
-public class Assignment1 {
+public class IncomeTax {
     private double totalTax;
     private int IncomeCases;
 
@@ -35,7 +35,7 @@ public class Assignment1 {
     }
 
     public static void main(String[] args) {
-        Assignment1 incomeTaxCalculation = new Assignment1();
+        IncomeTax incomeTaxCalculation = new IncomeTax();
         System.out.println("\nTotal Taxable Income : 700000");
         incomeTaxCalculation.findIncomeTax(700000);
         System.out.println("\nTotal Taxable Income : 800000");

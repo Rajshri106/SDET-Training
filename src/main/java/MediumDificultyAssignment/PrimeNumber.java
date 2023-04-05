@@ -8,17 +8,14 @@ swapEnds([1, 6, 7, 9, 8]) → [1, 6, 7, 9, 8]   */
 package MediumDificultyAssignment;
 
 import java.util.Arrays;
-import java.util.LinkedList;
 
-public class Assignment3 {
-
+public class PrimeNumber {
     public void calculatePrimeNum(int[] intArray) {
         int temp = 0;
         int lastNum = intArray[intArray.length - 1];
         if (lastNum % 2 == 0) {
             System.out.println("The last number of array is not prime number: " + lastNum);
-        }
-        else {
+        } else {
             temp = intArray[0];
             intArray[0] = intArray[intArray.length - 1];
             intArray[intArray.length - 1] = temp;
@@ -28,7 +25,7 @@ public class Assignment3 {
     }
 
     public static void main(String[] args) {
-        Assignment3 a = new Assignment3();
+        PrimeNumber a = new PrimeNumber();
         int[] intArray = new int[]{1, 2, 3, 7};
         int[] intArray1 = new int[]{1, 2, 3};
         int[] intArray2 = new int[]{1, 6, 7, 9, 8};
@@ -36,6 +33,4 @@ public class Assignment3 {
         a.calculatePrimeNum(intArray1);
         a.calculatePrimeNum(intArray2);
     }
-
-
 }
