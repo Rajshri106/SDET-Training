@@ -4,22 +4,22 @@ public class ControlStatement {
 
 	public void if_ElseStatement()
 	{
-		int n = 8;
-		if(n%2==0)
+		int number = 8;
+		if(number%2==0)
 		{
-			System.out.println("Even number is : "+n);
+			System.out.println("Even number is : "+number);
 		}
 		else
 		{
-			System.out.println("Odd number is : "+n);
+			System.out.println("Odd number is : "+number);
 		}
 	}
 	
 	public void forLoop()
 	{
-		int n = 10;
+		int number = 10;
 		int count=0;
-		for(int i =0;i<=n;i++)
+		for(int i =0;i<=number;i++)
 		{
 			count++;
 		}
@@ -28,8 +28,8 @@ public class ControlStatement {
 	
 	public void switchClass()
 	{
-		int n =5;
-		switch(n)
+		int number =5;
+		switch(number)
 		{
 			case 1 :
 				System.out.println("The 1 number is matched");
@@ -55,7 +55,7 @@ public class ControlStatement {
 	
 	public void doWhileLoop()
 	{
-		int n = 8,i=0;
+		int number = 8,i=0;
 		
 		do
 		{
