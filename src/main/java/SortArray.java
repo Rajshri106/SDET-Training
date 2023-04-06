@@ -1,29 +1,29 @@
 import java.util.Arrays;
 
 public class SortArray {
-    public void ascendingArray(int[] intArray)
+    public void ascendingArray(int[] arrayValues)
     {
         int temp = 0;
 
         //Sort the array in ascending order using two for loops
-        for (int i = 0; i <intArray.length; i++) {
-            for (int j = i+1; j <intArray.length; j++) {
+        for (int i = 0; i <arrayValues.length; i++) {
+            for (int j = i+1; j <arrayValues.length; j++) {
                 //swap elements if not in order
-                if(intArray[i] >intArray[j]) {
-                    temp = intArray[i];
-                    intArray[i] = intArray[j];
-                    intArray[j] = temp;
+                if(arrayValues[i] >arrayValues[j]) {
+                    temp = arrayValues[i];
+                    arrayValues[i] = arrayValues[j];
+                    arrayValues[j] = temp;
                 }
             }
         }
         //print sorted array
-        System.out.println("\nArray sorted in ascending order: "+ Arrays.toString(intArray));
+        System.out.println("\nArray sorted in ascending order: "+ Arrays.toString(arrayValues));
     }
     public static void main(String[] args) {
-        SortArray a = new SortArray();
+        SortArray sortArray = new SortArray();
         //array declaration
         int [] intArray = new int [] {2,0,1,0,1};
-        a.ascendingArray(intArray);
+        sortArray.ascendingArray(intArray);
     }
 }    
 
