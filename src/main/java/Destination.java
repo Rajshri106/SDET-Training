@@ -2,28 +2,19 @@ import java.util.*;
 
 public class Destination {
     public static void main(String[] args) {
-        LinkedList list1 = new LinkedList();
-        list1.add("B");
-        list1.add("C");
-        LinkedList list2 = new LinkedList();
-        list2.add("D");
-        list2.add("B");
-        LinkedList list3 = new LinkedList();
-        list3.add("C");
-        list3.add("A");
-        ArrayList<LinkedList> aList = new ArrayList<LinkedList>();
-        aList.add(list1);
-        aList.add(list2);
-        aList.add(list3);
-        System.out.println(aList);
-        String destination = findDestination(aList);
+        List<List<String>> paths = new ArrayList<>();
+        paths.add(Arrays.asList("B", "C"));
+        paths.add(Arrays.asList("D", "B"));
+        paths.add(Arrays.asList("C", "A"));
+        System.out.println(paths);
+        String destination = findDestination(paths);
         System.out.println(destination);
     }
 
-    public static String findDestination(ArrayList<LinkedList> aList) {
+    public static String findDestination(List<List<String>> paths) {
         Set<String> startCities = new HashSet<>();
         Set<String> endCities = new HashSet<>();
-        for (List<String> path : aList) {
+        for (List<String> path : paths) {
             startCities.add(path.get(0));
             endCities.add(path.get(1));
         }
