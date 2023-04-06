@@ -4,7 +4,7 @@ public class IncomeTax {
     private int IncomeCases;
 
     public void findIncomeTax(int taxableIncome) {
-        IncomeCases = (taxableIncome <= 700000) ? 1 : (taxableIncome > 500000 && taxableIncome <= 1000000) ? 2 : (taxableIncome >= 1000000 && taxableIncome <= 1500000) ? 3 : 4;
+        IncomeCases = (taxableIncome <= 700000) ? 1 : (taxableIncome <= 1000000) ? 2 : (taxableIncome <= 1500000) ? 3 : 4;
 
         switch (IncomeCases) {
             case 1:
@@ -27,7 +27,7 @@ public class IncomeTax {
     public static void main(String[] args) {
         IncomeTax incomeTaxCalculation = new IncomeTax();
         System.out.println("\nTotal Taxable Income : 700000");
-        incomeTaxCalculation.findIncomeTax(700000);
+        incomeTaxCalculation.findIncomeTax(500000);
         System.out.println("\nTotal Taxable Income : 800000");
         incomeTaxCalculation.findIncomeTax(800000);
         System.out.println("\nTotal Taxable Income : 1400000");
