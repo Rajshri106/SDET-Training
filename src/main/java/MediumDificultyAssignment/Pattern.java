@@ -6,7 +6,6 @@ package MediumDificultyAssignment;
  32123�
 4321234�*/
 public class Pattern {
-
     public void printPattern(int n) {
         for (int i = 1; i <= n; i++) {
             // Print spaces
@@ -31,4 +30,3 @@ public class Pattern {
         a.printPattern(n);
     }
 }
-
