@@ -5,7 +5,7 @@ public abstract class AbstractDemo {
         System.out.println("move to x: " + newS + " and y:" + newY);
     }
 
-    abstract void draw();
+    public abstract void draw();
 
-    abstract void resize();
+    public abstract void resize();
 }
