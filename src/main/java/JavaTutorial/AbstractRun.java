@@ -4,9 +4,9 @@ public class AbstractRun {
 
 	public static void main(String[] args)
 	{
-		AbstractDemo c = new AbstractCircle();
-		c.moveTo(4,7);
-		c.draw();
-		c.resize();
+		AbstractDemo abstractCircle = new AbstractCircle();
+		abstractCircle.moveTo(4,7);
+		abstractCircle.draw();
+		abstractCircle.resize();
 	}
 }
