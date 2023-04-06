@@ -1,4 +1,5 @@
 package MediumDificultyAssignment;
+
 import java.util.Arrays;
 public class PrimeNumber {
     public void calculatePrimeNum(int[] intArray) {
