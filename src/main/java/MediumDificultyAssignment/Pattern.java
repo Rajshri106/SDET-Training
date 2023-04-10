@@ -1,10 +1,5 @@
 package MediumDificultyAssignment;
 
-/*Q2 Java program to print the following patterns�
-���1�
-� 212�
- 32123�
-4321234�*/
 public class Pattern {
     public void printPattern(int n) {
         for (int i = 1; i <= n; i++) {
