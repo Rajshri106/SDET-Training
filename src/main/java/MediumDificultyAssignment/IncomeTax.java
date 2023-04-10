@@ -27,7 +27,7 @@ public class IncomeTax {
     public static void main(String[] args) {
         IncomeTax incomeTaxCalculation = new IncomeTax();
         System.out.println("\nTotal Taxable Income : 700000");
-        incomeTaxCalculation.findIncomeTax(500000);
+        incomeTaxCalculation.findIncomeTax(700000);
         System.out.println("\nTotal Taxable Income : 800000");
         incomeTaxCalculation.findIncomeTax(800000);
         System.out.println("\nTotal Taxable Income : 1400000");
