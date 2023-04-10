@@ -9,11 +9,11 @@ public class SortArray {
         for (int i = 0; i <arrayValues.length; i++) {
             for (int j = i+1; j <arrayValues.length; j++) {
                 //swap elements if not in order
-                if(arrayValues[i] >arrayValues[j]) {
-                    temp = arrayValues[i];
-                    arrayValues[i] = arrayValues[j];
-                    arrayValues[j] = temp;
-                }
+                    if (arrayValues[i] > arrayValues[j]) {
+                        temp = arrayValues[i];
+                        arrayValues[i] = arrayValues[j];
+                        arrayValues[j] = temp;
+                    }
             }
         }
         //print sorted array
