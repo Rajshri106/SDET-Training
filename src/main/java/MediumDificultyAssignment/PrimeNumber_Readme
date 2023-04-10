@@ -1,0 +1,13 @@
+/*Q3. Given an array of ints, swap the first and last elements in the array. Return the modified array.
+  If the last array value is prime no.  
+  swapEnds([1, 2, 3, 7]) → [7, 2, 3, 1] 
+  swapEnds([1, 2, 3]) → [3, 2, 1] 
+  swapEnds([1, 6, 7, 9, 8]) → [1, 6, 7, 9, 8]   */
+--------------------------------------------------------------------------------------------------------
+/*Output
+The last number of array is  prime number: 7
+The swap array is: [7, 2, 3, 1]
+The last number of array is  prime number: 3
+The swap array is: [3, 2, 1]
+The last number of array is not prime number: 8
+Process finished with exit code 0*/
