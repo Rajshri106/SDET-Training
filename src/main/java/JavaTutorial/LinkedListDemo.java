@@ -15,7 +15,6 @@ public class LinkedListDemo {
         list.remove("B");
         list.removeFirst();
         list.removeLast();
-
         System.out.println(list);
     }
 }
