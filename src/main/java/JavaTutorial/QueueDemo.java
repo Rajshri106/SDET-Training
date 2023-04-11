@@ -2,8 +2,9 @@ package JavaTutorial;
 
 import java.util.LinkedList;
 import java.util.Queue;
+
 public class QueueDemo {
-	public static void main(String[] args) {
+    public static void main(String[] args) {
         Queue<String> queue = new LinkedList<>();
         queue.add("America");
         queue.add("Germany");
