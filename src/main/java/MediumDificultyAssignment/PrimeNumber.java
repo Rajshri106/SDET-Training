@@ -35,10 +35,10 @@ public class PrimeNumber {
     public static void main(String[] args) {
         PrimeNumber primeNumber = new PrimeNumber();
         int[] inputArray = new int[]{1, 2, 3, 7};
-        int[] inputArray1 = new int[]{1, 2, 3};
-        int[] inputArray2 = new int[]{1, 6, 7, 9, 8};
+        int[] inputArrayOne = new int[]{1, 2, 3};
+        int[] inputArrayTwo = new int[]{1, 6, 7, 9, 8};
         primeNumber.calculatePrimeNum(inputArray);
-        primeNumber.calculatePrimeNum(inputArray1);
-        primeNumber.calculatePrimeNum(inputArray2);
+        primeNumber.calculatePrimeNum(inputArrayOne);
+        primeNumber.calculatePrimeNum(inputArrayTwo);
     }
 }
