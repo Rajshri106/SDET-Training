@@ -19,7 +19,7 @@ public class ControlStatement {
 	{
 		int number = 10;
 		int count=0;
-		for(int i =0;i<=number;i++)
+		for(int varOne =0;varOne<=number;varOne++)
 		{
 			count++;
 		}
@@ -55,21 +55,21 @@ public class ControlStatement {
 	
 	public void doWhileLoop()
 	{
-		int number = 8,i=0;
+		int number = 8,index=0;
 		
 		do
 		{
-			i++;
-			System.out.println(i);
+			index++;
+			System.out.println(index);
 		}while(false);
 	}
 	
 	public static void main(String[] args)
 	{
-		ControlStatement cs = new ControlStatement();
-		cs.if_ElseStatement();
-		cs.forLoop();
-		cs.switchClass();
-		cs.doWhileLoop();
+		ControlStatement controlStatement = new ControlStatement();
+		controlStatement.if_ElseStatement();
+		controlStatement.forLoop();
+		controlStatement.switchClass();
+		controlStatement.doWhileLoop();
 	}
 }
