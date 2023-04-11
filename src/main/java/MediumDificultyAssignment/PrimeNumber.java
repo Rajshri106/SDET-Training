@@ -4,23 +4,26 @@ import java.util.Arrays;
 
 public class PrimeNumber {
     public void calculatePrimeNum(int[] inputArray) {
+        int count = 0, varOne = 1;
         int lastNum = inputArray[inputArray.length - 1];
-        int resultNum = lastNum <= 1 ? 1 : lastNum == 2 ? 2 : 3;
+        int resultNum = lastNum <= 1 ? 1 : 2;
         switch (resultNum) {
             case 1:
-                System.out.println("The last number of array is not prime number: " + lastNum);
+                System.out.println(lastNum + " is a Not a prime number ");
                 break;
             case 2:
-                System.out.println("The last number of array is prime number: " + lastNum);
-                break;
-            case 3:
-                if ((lastNum / 2) % 2 == 0) {
-                    System.out.println("The last number of array is not prime number: " + lastNum);
-                } else {
-                    swapArray(inputArray);
-                    System.out.println("The last number of array is  prime number: " + lastNum);
-                    System.out.println("The swap array is: " + Arrays.toString(inputArray));
+                while (varOne <= lastNum) {
+                    if (lastNum % varOne == 0) {
+                        count++;
+                    }
+                    varOne++;
                 }
+                if (count == 2) {
+                    swapArray(inputArray);
+                    System.out.println(lastNum + " is a prime number ");
+                    System.out.println("The swap array is: " + Arrays.toString(inputArray));
+                } else
+                    System.out.println(lastNum + " is a Not a prime number ");
                 break;
         }
     }
