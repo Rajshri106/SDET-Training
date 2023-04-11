@@ -25,5 +25,4 @@ public class SortArray {
         int [] intArray = new int [] {2,0,1,0,1};
         sortArray.ascendingArray(intArray);
     }
-}    
-
+}
