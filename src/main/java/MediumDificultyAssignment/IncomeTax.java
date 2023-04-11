@@ -1,4 +1,5 @@
 package MediumDificultyAssignment;
+
 public class IncomeTax {
     private double totalTax;
     private int IncomeCases;
@@ -24,6 +25,7 @@ public class IncomeTax {
         }
         System.out.println("Income tax amount is :" + totalTax);
     }
+
     public static void main(String[] args) {
         IncomeTax incomeTaxCalculation = new IncomeTax();
         System.out.println("\nTotal Taxable Income : 700000");
