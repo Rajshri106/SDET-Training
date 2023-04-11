@@ -1,27 +1,27 @@
 package MediumDificultyAssignment;
 
 public class Pattern {
-    public void printPattern(int n) {
-        for (int i = 1; i <= n; i++) {
+    public void printPattern(int numRows) {
+        for (int row = 1; row <= numRows; row++) {
             // Print spaces
-            for (int j = 1; j <= n - i; j++) {
+            for (int column = 1; column <= numRows - row; column++) {
                 System.out.print(" ");
             }
             // Print decreasing numbers
-            for (int j = i; j >= 1; j--) {
-                System.out.print(j);
+            for (int decNum = row; decNum >= 1; decNum--) {
+                System.out.print(decNum);
             }
             // Print increasing numbers
-            for (int j = 2; j <= i; j++) {
-                System.out.print(j);
+            for (int incNum = 2; incNum <= row; incNum++) {
+                System.out.print(incNum);
             }
             System.out.println();
         }
     }
 
     public static void main(String[] args) {
-        Pattern a = new Pattern();
-        int n = 4;
-        a.printPattern(n);
+        Pattern pattern = new Pattern();
+        int numRows = 4;
+        pattern.printPattern(numRows);
     }
 }
