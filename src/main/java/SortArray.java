@@ -6,13 +6,13 @@ public class SortArray {
         int temp = 0;
 
         //Sort the array in ascending order using two for loops
-        for (int i = 0; i <arrayValues.length; i++) {
-            for (int j = i+1; j <arrayValues.length; j++) {
+        for (int varOne = 0; varOne <arrayValues.length; varOne++) {
+            for (int varTwo = varOne+1; varTwo <arrayValues.length; varTwo++) {
                 //swap elements if not in order
-                    if (arrayValues[i] > arrayValues[j]) {
-                        temp = arrayValues[i];
-                        arrayValues[i] = arrayValues[j];
-                        arrayValues[j] = temp;
+                    if (arrayValues[varOne] > arrayValues[varTwo]) {
+                        temp = arrayValues[varOne];
+                        arrayValues[varOne] = arrayValues[varTwo];
+                        arrayValues[varTwo] = temp;
                     }
             }
         }
