@@ -1,47 +1,35 @@
-package MediumDificultyAssignment;
+package MediumDificultyAssignment;//package MediumDificultyAssignment;
 
 import java.util.Arrays;
 
 public class PrimeNumber {
-    public void calculatePrimeNum(int[] inputArray) {
-        int count = 0, varOne = 1;
-        int lastNum = inputArray[inputArray.length - 1];
-        int resultNum = lastNum <= 1 ? 1 : 2;
-        switch (resultNum) {
-            case 1:
-                System.out.println(lastNum + " is a Not a prime number ");
-                break;
-            case 2:
-                while (varOne <= lastNum) {
-                    if (lastNum % varOne == 0) {
-                        count++;
-                    }
-                    varOne++;
-                }
-                if (count == 2) {
-                    swapArray(inputArray);
-                    System.out.println(lastNum + " is a prime number ");
-                    System.out.println("The swap array is: " + Arrays.toString(inputArray));
-                } else
-                    System.out.println(lastNum + " is a Not a prime number ");
-                break;
+    static int count = 0, i = 1;
+
+    int primeOrNot(int num) {
+        if (i <= num) {
+            if (num % i == 0) {
+                count++;
+            }
+            i++;
+            primeOrNot(num);
         }
+        return count;
     }
 
-    public void swapArray(int[] inputArray) {
-        int temp = 0;
-        temp = inputArray[0];
-        inputArray[0] = inputArray[inputArray.length - 1];
-        inputArray[inputArray.length - 1] = temp;
-    }
+    public static void main(String arg[]) {
+        PrimeNumber prime = new PrimeNumber();
+        int[] inputArray = new int[]{1, 2, 3, 29};
+        int lastNum = inputArray[inputArray.length - 1];
 
-    public static void main(String[] args) {
-        PrimeNumber primeNumber = new PrimeNumber();
-        int[] inputArray = new int[]{1, 2, 3, 7};
-        int[] inputArrayOne = new int[]{1, 2, 3};
-        int[] inputArrayTwo = new int[]{1, 6, 7, 9, 8};
-        primeNumber.calculatePrimeNum(inputArray);
-        primeNumber.calculatePrimeNum(inputArrayOne);
-        primeNumber.calculatePrimeNum(inputArrayTwo);
+        int result = prime.primeOrNot(lastNum);
+        if (result == 2) {
+            System.out.println(lastNum + " : is prime number ");
+            int temp = 0;
+            temp = inputArray[0];
+            inputArray[0] = inputArray[inputArray.length - 1];
+            inputArray[inputArray.length - 1] = temp;
+            System.out.println("The swap array is: " + Arrays.toString(inputArray));
+        } else
+            System.out.println("Not a prime number ");
     }
 }
