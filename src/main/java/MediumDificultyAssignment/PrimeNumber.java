@@ -3,15 +3,15 @@ package MediumDificultyAssignment;//package MediumDificultyAssignment;
 import java.util.Arrays;
 
 public class PrimeNumber {
-    static int count = 0, i = 1;
+    static int count = 0, varOne = 1;
 
-    int primeOrNot(int num) {
-        if (i <= num) {
-            if (num % i == 0) {
+    int primeOrNot(int lastNum) {
+        if (varOne <= lastNum) {
+            if (lastNum % varOne == 0) {
                 count++;
             }
-            i++;
-            primeOrNot(num);
+            varOne++;
+            primeOrNot(lastNum);
         }
         return count;
     }
