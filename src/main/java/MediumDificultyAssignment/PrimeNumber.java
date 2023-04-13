@@ -3,7 +3,7 @@ package MediumDificultyAssignment;//package MediumDificultyAssignment;
 import java.util.Arrays;
 
 public class PrimeNumber {
-    static int count = 0, varOne = 1;
+    public static int count = 0, varOne = 1;
 
     int primeOrNot(int lastNum) {
         if (varOne <= lastNum) {
