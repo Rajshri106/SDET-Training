@@ -3,14 +3,14 @@ package MediumDificultyAssignment;
 import java.util.Arrays;
 
 public class PrimeNumber {
-    public static int count = 0, varOne = 1;
+    public static int count = 0, index = 1;
 
     public int primeOrNot(int lastNum) {
-        if (varOne <= lastNum) {
-            if (lastNum % varOne == 0) {
+        if (index <= lastNum) {
+            if (lastNum % index == 0) {
                 count++;
             }
-            varOne++;
+            index++;
             primeOrNot(lastNum);
         }
         return count;
