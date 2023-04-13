@@ -21,8 +21,8 @@ public class MixString {
 
     public static void main(String[] args) {
         MixString mixString = new MixString();
-        String firstString = "abc";
-        String secondString = "xyz";
+        String firstString = "Hi";
+        String secondString = "There";
         mixString.findMixString(firstString, secondString);
     }
 }
