@@ -4,19 +4,28 @@ package MediumDificultyAssignment;
 mixString("abc", "xyz") → "axbycz"
 mixString("Hi", "There") → "HTihere"
 mixString("xxxx", "There") → "xTxhxexre"*/
+
 public class MixString {
     public void findMixString(String firstString, String secondString) {
         int firstStringLen = firstString.length();
         int secondStringLen = secondString.length();
         int maxLen = firstStringLen + secondStringLen;
-        String word = "";
-        for (int varOne = 0; varOne < maxLen; varOne++) {
-            if (varOne <= firstStringLen - 1)
-                word += firstString.substring(varOne, varOne + 1);
-            if (varOne <= secondStringLen - 1)
-                word += secondString.substring(varOne, varOne + 1);
+        StringBuilder word = new StringBuilder();
+        String extraString = "";
+        int index = 0;
+        while (index < maxLen + 1) {
+            word.append(firstString.charAt(index));
+            word.append(secondString.charAt(index));
+            index++;
+            if (index == firstStringLen) {
+                break;
+            } else {
+                extraString += secondString.substring(index + 1, secondStringLen);
+            }
         }
-        System.out.println("Mixstring is: " + word);
+        System.out.println("Same Length Mix String is: " + word);
+        System.out.println("Extra String is: " + extraString);
+        System.out.println("Mixstring is: " + word + extraString);
     }
 
     public static void main(String[] args) {
@@ -27,5 +36,7 @@ public class MixString {
     }
 }
 /*output
-Mixstring is: axbycz
-*/
+Same Length Mix String is: HTih
+Extra String is: ere
+Mixstring is: HTihere
+ */
