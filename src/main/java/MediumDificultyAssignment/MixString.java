@@ -6,6 +6,7 @@ mixString("Hi", "There") → "HTihere"
 mixString("xxxx", "There") → "xTxhxexre"*/
 
 public class MixString {
+    
     public void findMixString(String firstString, String secondString) {
         int firstStringLen = firstString.length();
         int secondStringLen = secondString.length();
