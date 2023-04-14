@@ -1,0 +1,13 @@
+/*Q2 Java program to print the following patterns�
+���1�
+� 212�
+ 32123�
+4321234�*/
+-----------------------------------------------------
+/*output
+   1
+  212
+ 32123
+4321234
+Process finished with exit code 0
+*/

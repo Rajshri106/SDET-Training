@@ -1,0 +1,14 @@
+package JavaTutorial;
+
+public class RunInheritance {
+
+	public static void main(String[] args)
+	{
+	MountainBike mountainBike = new MountainBike(20,10,1);
+	System.out.println("Gear is: "+mountainBike.gear);
+	System.out.println("Seat height is: "+mountainBike.setHeight);
+	System.out.println("Bike speed is: "+mountainBike.speed);
+	mountainBike.applyBreak(1);
+	System.out.println("Bike speed after applying break is: "+mountainBike.speed);
+	}
+	}

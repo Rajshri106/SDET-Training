@@ -1,0 +1,12 @@
+../src/MediumDificultyAssignment/*.class
+../bin/*.class
+bin/*.class
+../bin/JavaTutorial/*.class
+../out/production/SDET/*.class
+../out/production/SDET/JavaTutorial/*.class
+../out/production/SDET/MediumDificultyAssignment/*.class
+../src/main/java/org.example/*.class
+../src/main/java/MediumDificultyAssignment/*.class
+.idea
+SDET.xml
+pom.xml
